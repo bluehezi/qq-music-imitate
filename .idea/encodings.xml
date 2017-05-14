@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build/dev-server.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/build/webpack.prod.conf.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/App.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/common/css/border.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/common/js/DateFormat.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/common/js/JqyeryWrapper.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/common/js/appInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/ranking/ranking.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/recommend/recommend.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/search/search.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/songListShow/songListShow.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/songPage/songPage.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/router/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/store/actions.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/store/getters.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/store/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/store/mutation_type.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/store/mutations.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/css/reset.css" charset="UTF-8" />
+  </component>
+</project>
