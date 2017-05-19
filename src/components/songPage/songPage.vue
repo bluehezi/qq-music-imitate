@@ -25,6 +25,7 @@
                  id="player"
             ></audio>
           <div class="options">
+            <i class="back" @click="toClose">back</i>
             <i class="favorite"></i>
           </div>
           <div class="process">
@@ -64,6 +65,9 @@ export default {
     }
   },
   methods: {
+    keydown: function (event) {
+      console.log(event.keyCode)
+    },
     toShow: function () {
       this.showStatus = true
       document.body.style.overflow = 'hidden'
@@ -159,7 +163,9 @@ export default {
   mounted: function () {
   },
   updated: function () {
-    this.$refs.bg.style.backgroundImage = 'url(' + this.song.albumpic_big + ')'
+    if (this.$refs.bg) {
+      this.$refs.bg.style.backgroundImage = 'url(' + this.song.albumpic_big + ')'
+    }
   },
   watch: {
     'showStatus': function (n, o) {
@@ -297,13 +303,22 @@ export default {
     .control {
       position: absolute;
       bottom: 0;
-      top: 537px;
+      height: 146px;
       left: 0;
       right: 0;
       .options {
         margin-top: 30px;
         padding-right: 30px;
         text-align: right;
+        .back {
+          float: left;
+          width: 40px;
+          height: 30px;
+          padding-left: 16px;
+          font-size: 20px;
+          color: #888;
+          font-weight: 400;
+        }
         .favorite {
           display: inline-block;
           width: 26px;

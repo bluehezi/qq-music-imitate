@@ -2,7 +2,7 @@
     <div id="songlistshow" v-show="showStatus" ref="_songlistshow">
       <div class="wrapper">
         <div class="cover">
-          <span class="close" @click="toClose">X</span>
+          <span class="close" @click="toClose">back</span>
           <div class="info">
             <span class="title">{{title}}</span>
             <span class="time" v-if="pagebean">{{pagebean.update_time}} 更新</span>
@@ -10,7 +10,7 @@
           </div>
         </div>
         <ul class="songlist" v-if="pagebean">
-          <li class="song-item" v-for="item,index in pagebean.songlist" :key="index" @click="toSongPage(item, event)">
+          <li class="song-item" v-for="item,index in pagebean.songlist" :key="index" @click="toSongPage(item, $event)">
             <div class="index">{{index}}</div>
             <div class="song-info">
               <span class="songname">{{item.songname}}</span>
@@ -58,9 +58,10 @@ export default {
       }
     },
     toSongPage: function (item, event) {
-      this.currentSong = item
-      this.$refs.song.toShow()
-      console.log(arguments)
+      if (event._constructed) {
+        this.currentSong = item
+        this.$refs.song.toShow()
+      }
     }
   },
   updated: function () {
@@ -102,13 +103,12 @@ export default {
       position: absolute;
       left: 10px;
       top: 10px;
-      width: 36px;
       height: 36px;
-      color: #bbb;
-      font-size: 30px;
+      color: #666;
+      font-size: 24px;
       line-height: 36px;
       text-align: center;
-      font-weight: 100;
+      font-weight: 500;
       &:hover {
          background-color: rgba(255,255,255,.8);
        }
